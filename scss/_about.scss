@@ -1,0 +1,26 @@
+.about {
+    padding: 100px 0px 70px;
+
+    line-height: 25px;  
+    text-align: justify;
+}
+.about__title {
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    color: $fontColor;
+    text-align: center;
+}
+.about__info {
+    p {
+        &:nth-child(3) {
+            padding-bottom: 10px;
+            border-bottom: 2px solid $fontColor;
+        }
+        &:last-child {
+            margin-top: 40px;
+
+            text-align: center;
+        }
+    }
+}

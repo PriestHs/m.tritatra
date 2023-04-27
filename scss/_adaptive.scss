@@ -1,0 +1,346 @@
+@media (max-width: 1450px) {
+    .container {
+        width: 1200px;
+    }
+    .nav__list {
+        width: 90%;
+    }
+    .services__item {
+        width: 376px;
+    }
+    .nav__list--plan {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .container {
+        width: 1000px;
+    }
+    .nav__link {
+        padding: 14px 9px;
+    
+        font-size: 16px;
+    }
+    .nav__list {
+        width: 100%;
+    }
+    .header {
+        &::before {
+            height: 190%;
+        }
+    }
+    .footer {
+        font-size: 18px;
+    }
+    .footer__title {
+        font-size: 20px;
+    }
+    .footer__map {
+        max-width: 550px;
+        width: auto;
+        height: 280px;
+    }
+    .nav__list--about,
+    .nav__list--lanshaft {
+        .nav__link {
+            &:nth-child(5) {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .container {
+        width: 800px;
+    }
+    .nav__link {
+        max-width: 137px;
+        padding: 10px 2px;
+    
+        font-size: 16px;
+    }
+    .header {
+        &::before {
+            height: 180%;
+        }
+    }
+    .services__item {
+        width: 350px;
+    }
+    .footer {
+        font-size: 16px;
+    }
+    .footer__info {
+        max-width: 200px;
+        span {
+            display: none;
+        }
+    }
+    .footer__title {
+        font-size: 18px;
+    }
+    .footer__tel--2 {
+        padding-left: 25px;
+        &::before {
+            content: '';
+        }
+    }
+    .footer__map {
+        max-width: 450px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 600px;
+    }
+    .nav__list {
+        width: 100%;
+        margin: 0;
+
+        justify-content: center;
+    }
+    .nav__list {
+        .nav__link {
+            &:nth-child(5) {
+                margin: 0;
+            }
+        }
+    }
+    .nav__link {
+        max-width: 157px;
+        padding: 7px 5px;
+    }
+    .header {
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 170%;
+            left: 0;
+            top: 0;
+    
+            background-image: url(../img/bg.jpg);
+            // background-size:auto;
+            background-repeat: no-repeat;
+            background-position: center center ;
+    
+            z-index: -1;
+            opacity: 0.8;
+        }
+    }
+    .services__item {
+        width: 275px;
+    }
+    .services__item-title {
+        width: unset;
+        margin: 0 auto 25px auto;
+    
+        font-weight: 700;
+        text-align: center;
+        color: $fontColor;
+        font-size: 26px;
+    
+        transition: all 0.2s linear;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    .footer {
+        font-size: 14px;
+    }
+    .footer__title {
+        font-size: 16px;
+    }
+    .footer__tel {
+        padding-left: 20px;
+        &::before {
+            width: 12px;
+            height: 12px;
+        }
+    }
+    .footer__address {
+        padding-left: 20px;
+        &::before {
+            width: 24px;
+            height: 24px;
+        }
+    }
+    .footer__map {
+        max-width: 300px;
+        height: 200px;
+    }
+    .road__text {
+        font-size: 22px;
+    }
+    .road__info {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        font-size: 16px; 
+    }
+    p + p {
+        margin-top: 0.5em;
+    }
+    .container {
+        width: 400px;   
+    }
+    .nav__list {
+        justify-content:center;
+    }
+    .nav__link {
+        width: 157px;
+        height: 48px;
+        padding: 7px 5px;
+    }
+    .header {
+        padding: 50px 0px 30px 0;
+        &::before {
+            height: 151%;
+        }
+    }
+    .header__title {
+        margin-bottom: 20px;
+
+        font-size: 35px;
+        text-align: center;
+    }
+    .header__tel {
+        width: 190px;
+        margin: 0 auto 30px auto;
+        padding: 3px 3px 3px 25px;
+    
+        font-size: 18px;
+        svg {
+            width: 16px;
+            height: 16px;
+        }  
+    }
+    .services__main {
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .services__item {
+        width: 195px;
+        padding: 10px;
+    }
+    .services__item-title {
+        width: unset;
+        margin: 0 auto 15px auto;
+
+        font-size: 22px;
+    }
+    .services__item-link {
+        margin-bottom: 6px;
+        padding-left: 10px;
+
+        font-size: 14px;
+        &::before {
+            width: 5px;
+            height: 5px;
+        }
+    }
+    .about {
+        padding: 50px 0px 30px;
+    }
+    .about__title {
+        margin-bottom: 25px;
+    
+        font-size: 32px;
+        color: $fontColor;
+        text-align: center;
+    }
+    .about__info {
+        font-size: 14px;
+        p {
+            &:nth-child(3) {
+                padding-bottom: 5px;
+            }
+            &:last-child {
+                margin-top: 25px;   
+            }
+        }
+    }
+    .footer {
+        padding: 25px 0px;
+    }
+    .footer__wrapper {
+        align-items: center;
+    }
+    .footer__info {
+        padding: 0;
+    }
+    .footer__title {
+        margin-bottom: 20px;
+    }
+    .footer__tel {
+        margin-bottom: 12px;
+    }
+    .footer__map {
+        max-width: 200px;
+        height: 100px;
+        
+
+        display: flex;
+        align-items: center;
+    }
+    .road {
+        padding: 30px 0px;
+    }
+    .road__item {
+        margin-bottom: 25px;
+
+        row-gap: 10px;
+    }
+    .road__text {
+        text-align: left;
+        font-size: 20px;
+    }
+    .road__info {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 460px) {
+    p + p {
+        margin-top: 0.2em;
+    }
+    .container {
+        width: 280px;
+    }
+    .nav__link {
+        width: 139px;
+    }
+    .header {
+        padding: 35px 0px 20px;
+        &:before {
+            height: 155%;
+        }
+    }
+    .header__tel {
+        margin-bottom: 25px;
+    }
+    .services__item {
+        width: 280px;
+    }
+    .about {
+        padding: 40px 0px 20px;
+    }
+    .about__title {
+        margin-bottom: 15px;
+        line-height: 26px;
+    }
+    .about__info p:last-child {
+        margin-top: 15px;
+    }
+    .footer__map {
+        max-width: 100px;
+        height: 150px;
+    }
+}
