@@ -1,21 +1,17 @@
 .header {
     position: relative;
     padding: 40px 0px 60px 0;
-
-    overflow: hidden;
-
-    // background-image: url(../img/bg.jpg);
     &::before {
         content: '';
         position: absolute;
         width: 100%;
-        height: 125%;
+        height: 100%;
         left: 0;
         top: 0;
 
         background-image: url(../img/bg.jpg);
         background-size: cover;
-        background-position: 0 -400px;
+        background-position: bottom;
         background-repeat: no-repeat;
 
         z-index: -1;
@@ -89,6 +85,37 @@
     border-radius: 15px;
     -webkit-box-shadow: 0px 0px 6px 1px #000000; 
     box-shadow: 0px 0px 6px 1px #000000;
+    p {
+        a {
+            color: #000;
+            text-decoration: underline;
+            
+            transition: all 0.2s linear;
+            &:hover {
+                opacity: 0.8;
+
+                text-decoration: none;
+            }
+        }
+    }
+    ul {
+        position: relative;
+        margin-left: 18px;
+        li {
+            list-style-type:disc;
+            a {
+                color: #000;
+                text-decoration: underline;
+                
+                transition: all 0.2s linear;
+                &:hover {
+                    opacity: 0.8;
+
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 .header__item {
     position: relative;
@@ -110,13 +137,13 @@
     }
 }
 .header__heading {
-    padding-bottom: 3px;
     margin-bottom: 20px;
 
     font-size: 40px;
     font-weight: 700;
     color: $fontColor;
     text-align: center;
+    line-height: 36px;
 }
 .header__heading--link {
 
@@ -157,4 +184,162 @@
 
     border-radius: 15px;
     border: 4px solid $fontColor;
+}
+.header__big-img {
+    text-align: left;
+    img {
+        border-radius: 15px;
+        border: 5px solid $fontColor;
+    }
+}
+.header__big-img--absolute {
+    position: absolute;
+    left: 150px;
+    bottom: 0;
+}
+// Модификаторы
+.header--a-spe {
+    .header__heading {
+        margin-bottom: 120px;
+    }
+    .header__img {
+        top: -20px;
+    }
+} 
+.header--a-spe,
+.header--about {
+    .header__item:nth-child(3) .header__desc {
+        margin-bottom: 30px;
+    }
+}
+.header--about {
+    .header__item:nth-child(3) {
+        p {
+            &:last-child {
+                text-align: center;
+                font-style: italic;
+            }
+        }
+    }
+}
+.header--a-sam {
+    .header__item .header__heading {
+        margin-bottom: 140px;
+    }
+    &::before {
+        height: 145%;
+    }
+}
+.header--doroga {
+    .header__item:nth-child(5) .header__desc {
+        margin-bottom: 40px;
+    }
+}
+.header--services {
+    .header__item {
+        ul {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            li {
+                a {
+                    font-size: 26px;
+                }
+            }
+        }
+
+    }
+}
+.header--u-pesok {
+    &::before {
+        height: 145%;
+    }
+}
+.header--u-sheben {
+    &::before {
+        height: 310%;
+    }
+}
+.header--a-kran {
+    &::before {
+    height: 130%;
+    }
+}
+.header--a-eks {
+    &:before {
+        height: 140%;
+    }
+}
+.header--arenda {
+    &::before {
+        height: 120%;
+    }
+}
+.header--a-bul {
+    &::before {
+        height: 131%;
+    }
+   .header__heading {
+    margin-bottom: 70px;
+   } 
+}
+.header--bull {
+    .header__item {
+        &:nth-child(3) {
+            .header__desc {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+.header--sam {
+    &::before {
+        height: 110%;
+    }
+}
+.header--tatra {
+    &::before {
+        height: 140%;
+    }
+}
+.header--ural {
+    &::before {
+        height: 190%;
+    }
+}
+.header--maz {
+    &::before {
+        height: 110%;
+    }
+}
+.header--kraz {
+    &::before {
+        height: 270%;
+    }
+}
+.header--mzkt {
+    &::before {
+        height: 250%;
+    }
+}
+.header--eks {
+    &::before {
+        height: 133%;
+    }
+}
+.header--jcb {
+    .header__heading {
+        margin-bottom: 60px;
+    }
+    .header__img {
+        top: -35px;
+    }
+    &::before {
+        height: 210%;
+    }
+}
+.header--tatra-eks {
+    &::before {
+        height: 201%;
+    }
 }

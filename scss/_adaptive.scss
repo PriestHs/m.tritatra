@@ -25,9 +25,29 @@
     .nav__list {
         width: 100%;
     }
-    .header {
+    .header--a-sam {
         &::before {
-            height: 190%;
+            height: 145%;
+        }
+    }
+    .header--u-sheben {
+        &::before {
+            height: 325%;
+        }
+    }
+    .header--jcb .header__heading {
+        margin-left: 160px;
+    }
+    .plan__item {
+        &:last-child {
+            .plan__desc {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .plan__body {
+                margin-left: 0;
+                margin-right: 0;
+            }
         }
     }
     .footer {
@@ -55,15 +75,91 @@
     .container {
         width: 800px;
     }
-    .nav__link {
-        max-width: 137px;
-        padding: 10px 2px;
-    
+    .nav__link {    
         font-size: 16px;
     }
-    .header {
+    .header--a-spe {
+        .header__heading {
+            padding-left: 70px;
+        }
+    }
+    .header--a-sam {
+        .header__item .header__heading {
+            padding-left: 90px;
+        }
         &::before {
-            height: 180%;
+            height: 145%;
+        }
+    }
+    .header--doroga {
+        .header__item .header__heading {
+            padding-left: 150px;
+        }
+    }
+    .header__item {
+        &:nth-child(2) {
+            .header__desc {
+                padding-left: 170px;
+                text-align: left;
+            }
+        }
+    }
+    .header--technic {
+        &::before {
+            height: 110%;
+        }
+    }
+    .header--jcb  {
+        .header__heading {
+            margin: 0;
+        }
+        .header__img {
+            display: none;
+        }
+    }
+    .header--hitachi {
+        &::before {
+            height: 165%;
+        }
+    }
+    .plan--a-kran {
+        .plan__desc li {
+            width: 20%;
+            &:nth-child(2) {
+                margin-left: -50px;
+            }
+            &:nth-child(3) {
+                margin-left: -30px;
+            }
+            &:nth-child(4) {
+                margin-right: -70px;
+            }
+        }
+    }
+    .plan--a-eks {
+        .plan__desc {
+            li {
+                &:nth-child(2) {
+                    margin-left: 60px;
+                }
+            }
+        }
+    }
+    .plan__body--kamaz6520 {
+        .plan__name,
+        .plan__cost {
+            li {
+                &:nth-child(9) {
+                    height: 36px;
+                }
+            }
+        }
+    }
+    .plan--tatra-eks {
+        .plan__body {
+            li {
+                height: 36px;
+            }
         }
     }
     .services__item {
@@ -114,22 +210,130 @@
         max-width: 157px;
         padding: 7px 5px;
     }
-    .header {
+    .header--a-spe {
+        .header__heading {
+            padding: 0;
+            margin-bottom: 30px;
+        }
+    } 
+    .header--a-sam {
         &::before {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 170%;
-            left: 0;
-            top: 0;
-    
-            background-image: url(../img/bg.jpg);
-            // background-size:auto;
-            background-repeat: no-repeat;
-            background-position: center center ;
-    
-            z-index: -1;
-            opacity: 0.8;
+            height: 145%;
+        }
+        .header__item .header__heading {
+            padding: 0;
+            margin-bottom: 30px;
+        }
+    }
+    .header--u-sheben {
+        &::before {
+            height: 350%;
+        }
+    }
+    .header--doroga {
+        .header__item .header__heading {
+            padding: 0;
+        }
+    }
+    .header__item {
+        &:nth-child(2) {
+            .header__desc {
+                padding: 0;
+                text-align: center;
+            }
+        }
+        &:nth-child(3),
+        &:nth-child(5) {
+            .header__desc {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .header__img {
+        display: none;
+    }
+    .header--tatra {
+        &::before {
+            height: 130%;
+        }
+    }
+    .header--tatra-eks {
+        &::before {
+            height: 175%;
+        }
+    }
+    .plan__desc {
+        li {
+            font-size: 18px;
+            &:nth-child(2) {
+                word-break: break-all; 
+                text-align: center;
+            }
+        }
+    }
+    .plan--u-sheben {
+        .plan__desc {
+            li {
+                font-size: 18px;
+                &:nth-child(2) {
+                    word-break: unset; 
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .plan--a-kran {
+        .plan__desc li {
+            font-size: 18px;
+            &:nth-child(2) {
+                margin-left: -90px;
+
+                word-break: normal;
+                text-align: end;
+            }
+            &:nth-child(3) {
+                margin-left: -45px;
+            }
+        }
+    }
+    .plan--a-eks {
+        .plan__desc {
+            li {
+                &:nth-child(2) {
+                    margin-left: -80px;
+                }
+                &:nth-child(3) {
+                    margin-right: -130px;
+                }
+                &:nth-child(4) {
+                    margin-right: -100px;
+                }
+            }
+        }
+    }
+    .plan--tatra,
+    .plan--jcb,
+    .plan--tatra-eks {
+        font-size: 14px;
+    }
+    .plan__body--kamaz6520 {
+        .plan__name,
+        .plan__cost {
+            li {
+                &:nth-child(9) {
+                    height: 26px;
+                }
+            }
+        }
+    }
+    .plan--tatra-eks {
+        .plan__body {
+            li {
+                height: 24px;
+                &:nth-child(15) {
+                    margin-bottom: 15px;
+                }
+            }
         }
     }
     .services__item {
@@ -201,9 +405,11 @@
     }
     .header {
         padding: 50px 0px 30px 0;
-        &::before {
-            height: 151%;
-        }
+    }
+    .header__content {
+        padding: 20px 10px;
+
+        row-gap: 30px;
     }
     .header__title {
         margin-bottom: 20px;
@@ -221,6 +427,171 @@
             width: 16px;
             height: 16px;
         }  
+    }
+    .header__heading {
+        margin-bottom: 10px !important;
+
+        font-size: 24px;
+    }
+    .header__desc {
+        margin-bottom: 15px !important;
+
+        font-size: 22px;
+    }
+    .header--u-sheben {
+        &::before {
+            height: 445%;
+        }
+    }
+    .header--services {
+        .header__item {
+            ul {
+
+                row-gap: 20px;
+                li {
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+    
+        }
+    }
+    .header--services {
+        &::before {
+            height: 150%;
+        }
+    }
+    .header--ural {
+        &::before {
+            height: 220%;
+        }
+    }
+    .header__big-img--absolute {
+        display: none;
+    }
+    .header--kraz {
+        &::before {
+            height: 295%;
+        }
+    }
+    .plan__item {
+        &:first-child {
+            .plan__desc {
+                li {
+                    &:nth-child(2) {
+                        word-break: break-all; 
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .plan__desc {
+        li {
+            &:nth-child(2) {
+                text-align: end;
+            }
+        }
+    }
+    .plan--pesok {
+        .plan__item {
+            &:first-child {
+                .plan__desc {
+                    li {
+                        &:nth-child(2) {
+                            word-break: unset; 
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .plan--a-kran {
+        .plan__body {
+            font-size: 12px;
+        }
+        .plan__desc li {
+            font-size: 12px;
+
+            word-break: break-all;
+            &:nth-child(1) {
+                width: 14%;
+            }
+            &:nth-child(2) {
+                width: 14%;
+                margin-left: -10px;
+
+                word-break: break-all;
+                text-align: end!important;
+            }
+            &:nth-child(3) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            &:nth-child(4) {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            &:nth-child(5) {
+                width: 19%;
+            }
+        }
+    }
+    .plan--a-eks {
+        .plan__desc {
+            li {
+                &:nth-child(2) {
+                    margin-right: -10px;
+                    margin-left: 10px;
+                }
+                &:nth-child(3) {
+                    width: 13%;
+                    margin-right: -40px;
+                }
+                &:nth-child(4) {
+                    margin-right: -50px;
+                }
+            }
+        }
+    }
+    .plan--tatra {
+        .plan__name,
+        .plan__cost {
+            li {
+                height: 28px;
+            }
+        }
+    }
+    .plan--kamaz {
+        .plan__name, 
+        .plan__cost {
+            li {
+                height: 42px;
+            }
+        }
+    }
+    .plan__body--kamaz6520 {
+        .plan__name,
+        .plan__cost {
+            li {
+                &:nth-child(9) {
+                    height: 42px;
+                }
+            }
+        }
+    }
+    .plan--tatra-eks {
+        .plan__body {
+            li {
+                height: 24px;
+                &:nth-child(4),
+                &:nth-child(15) {
+                    margin-bottom: 34px;
+                }
+            }
+        }
     }
     .services__main {
         column-gap: 10px;
@@ -319,12 +690,149 @@
     }
     .header {
         padding: 35px 0px 20px;
+    }
+    .header--a-sam {
+        &::before {
+            height: 125%;
+        }
+    }
+    .header--u-sheben {
+        &::before {
+            height: 485%;
+        }
+    }
+    .header--a-kran {
+        &::before {
+        height: 120%;
+        }
+    }
+    .header--a-eks {
         &:before {
-            height: 155%;
+            height: 122%;
         }
     }
     .header__tel {
         margin-bottom: 25px;
+    }
+    .header--ural {
+        &::before {
+            height: 260%;
+        }
+    }
+    .header--kraz {
+        &::before {
+            height: 270%;
+        }
+    }
+    .header--mzkt {
+        &::before {
+            height: 210%;
+        }
+    }
+    .header--tatra-eks {
+        &::before {
+            height: 160%;
+        }
+    }
+    .header--hitachi {
+        &::before {
+            height: 165%;
+        }
+    }
+    .plan__item {
+            .plan__desc {
+                li {
+                    font-size: 12px;
+                }
+            }
+    }
+    .plan__body {
+        font-size: 12px;
+    }
+    .plan__heading {
+        font-size: 20px;
+    }
+    .plan__desc {
+        font-size: 16px;
+    }
+    .plan--a-kran {
+        .plan__body {
+            font-size: 10px;
+        }
+        .plan__name {
+            font-size: 10px;
+        }
+        .plan__desc li {
+            hyphens: auto;
+            &:nth-child(1) {
+                width: 20%;
+            }
+            &:nth-child(2) {
+                width: 20%;
+                margin-left: -10px;
+            }
+            &:nth-child(4) {
+                width: 21%;
+            }
+        }
+    }
+    .plan--a-eks {
+        .plan__desc {
+            li {
+                &:nth-child(2) {
+                    margin-left: -0px;
+                }
+                &:nth-child(3) {
+                    width: 16%;
+                    margin: 0;
+                    margin-left: 10px;
+                }
+                &:nth-child(4) {
+                    margin: 0;
+                    margin-right: -10px;
+                    width: 12%;
+                }
+                &:nth-child(5) {
+                    width: 18%;
+
+                    text-align: end;
+                }
+            }
+        }
+    }
+    .plan--tatra {
+        .plan__name,
+        .plan__cost {
+            li {
+                height: 36px;
+            }
+        }
+    }
+    .plan--kamaz {
+        .plan__name, 
+        .plan__cost {
+            li {
+                &:nth-child(10) {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+    .plan--jcb {
+        .plan__body {
+            li {
+                height: 24px;
+            }
+        }
+    }
+    .plan--tatra-eks {
+        .plan__body {
+            li {
+                &:nth-child(1) {
+                    margin-bottom: 18px;
+                }
+            }
+        }
     }
     .services__item {
         width: 280px;
@@ -344,3 +852,4 @@
         height: 150px;
     }
 }
+

@@ -1,0 +1,173 @@
+.plan {
+    padding: 40px 0px;
+}
+.plan__main-flex {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.plan__item {
+    width: 100%;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background-color: rgba(255, 255, 255, 0.778);
+    border: 3px solid silver;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 6px 1px #000000; 
+    box-shadow: 0px 0px 6px 1px #000000;
+    // &:nth-child(3) {
+    //     .plan__desc {
+    //         margin-left: 15%;
+    //         margin-right: 15%;
+    //     }
+    //     .plan__body {
+    //         margin-left: 15%;
+    //         margin-right: 15%;
+    //     }
+    // }
+}
+.plan__heading {
+    display: flex;
+
+    margin: 0 auto 25px auto;
+    
+    font-weight: 700;
+    text-align: center;
+    color: #663366;
+    font-size: 26px;
+}
+.plan__text {
+    margin-top: -5px;
+    margin-bottom: 1.5rem;
+}
+.plan__desc {
+    margin-bottom: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    font-size: 20px;
+    font-weight: 700;
+    li {
+        &:last-child {
+            text-align: end;
+        }
+    }
+}
+.plan__body {
+    display: flex;
+    justify-content: space-between;
+}
+.plan__img {
+    margin-bottom: 30px;
+}
+.plan__name {
+    li {
+        margin-bottom: 10px;
+    }
+}
+.plan__weight {
+    text-align: end;
+    li {
+        margin-bottom: 10px;
+    }
+}
+.plan__capacity {
+    text-align: end;
+    li {
+        margin-bottom: 10px;
+    }
+}
+.plan__info {
+    padding: 15px;
+    margin-top: 10px;
+
+    background-color: rgba(255, 255, 255, 0.778);
+    border: 3px solid silver;
+    border-radius: 15px;
+    box-shadow: 0px 0px 6px 1px #000000;
+    p + li {
+        margin: 5px 0px 10px 0px;
+    }
+    h6 + * {
+        margin-top: 10px;
+    }
+    h6 {
+        text-align: center;
+        font-weight: 700;
+        color: #663366;
+        &:nth-child(2) {
+            margin: 0;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+        li {
+            a {
+                text-decoration: underline;
+                color: #000;
+
+                transition: all 0.2s linear;
+                &:hover {
+                    text-decoration: none;
+
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+.plan__cost {
+    height: 100%;
+
+    text-align: end;
+    li {
+        margin-bottom: 10px;
+    }
+}
+.plan__costs {
+    text-align: end;
+    li {
+        margin-bottom: 10px;
+    }
+}
+// Модификаторы 
+.plan--a-eks {
+    .plan__desc {
+        li {
+            &:nth-child(4) {
+                margin-right: -30px;
+            }
+        }
+    }
+}
+.plan--jcb {
+    .plan__body {
+        li {
+            &:nth-child(5) {
+                height: 22px;
+            }
+        }
+    }
+}
+.plan--tatra-eks {
+    .plan__body {
+        li {
+            &:nth-child(4),
+            &:nth-child(15) {
+                height: 36px;
+            }
+            &:nth-child(8) {
+                height: 22px;
+            }
+        }
+    }
+}
+
